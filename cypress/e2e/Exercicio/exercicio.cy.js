@@ -49,10 +49,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.get('.single_add_to_cart_button').click()
         cy.get('.woocommerce-message').should('contain', qnt + ' × “Stellar Solar Jacket” foram adicionados no seu carrinho.')
 
-        //escolher produto 'Ariel Roll Sleeve Sweatshirt' com Comandos Customizados
+        //escolher produto 'Circe Hooded Ice Fleece' com Comandos Customizados
         cy.addProduto('Circe Hooded Ice Fleece', 'L', 'Purple', '3')
         cy.get('.woocommerce-message').should('contain', '3 × “Circe Hooded Ice Fleece” foram adicionados no seu carrinho.')
-
         //preencher informações de checkout com Comandos Customizados
         cy.get('[class="mini-cart-items"]').click()
         cy.get('[class="button checkout wc-forward"]').eq(1).click()
