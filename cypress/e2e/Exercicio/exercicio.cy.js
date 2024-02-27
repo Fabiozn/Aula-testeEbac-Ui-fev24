@@ -20,7 +20,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.addProduto('Aether Gym Pant', '33', 'Blue', '2');
         cy.get('.woocommerce-message').should('contain', '2 × “Aether Gym Pant” foram adicionados no seu carrinho.');
 
-        // Escolher produto 'Stellar Solar Jacket' com Page Objects e variáveis
+        // Escolher produto 'Augusta Pullover Jacket' com Page Objects e variáveis
         produtosPage.visitarProduto('Augusta Pullover Jacket');
         var qnt = '5';
         var tamanho = 'M';

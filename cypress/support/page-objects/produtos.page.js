@@ -5,7 +5,7 @@ class ProdutosPage {
         cy.get('[class="button-search btn btn-sm"]').eq(1).click()
     }
     
-    visitarProduto(nomeProduto){
+    addProduto(nomeProduto){
         const urlFormatada = nomeProduto.replace(/ /g, '-')
         cy.visit(`produto/${urlFormatada}`)
     }
